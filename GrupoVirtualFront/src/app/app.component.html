@@ -1,0 +1,44 @@
+<div class="navbar navbar-default" id="navbar">
+  <script type="text/javascript">
+    try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+  </script>
+
+  <div class="navbar-container" id="navbar-container">
+    <div class="navbar-header pull-left">
+      <a href="/" class="navbar-brand">
+        <small>
+          Grupo Virtual
+        </small>
+      </a><!-- /.brand -->
+    </div><!-- /.navbar-header -->
+  </div><!-- /.container -->
+</div>
+
+<div class="main-container-inner">
+  <div class="main-container-inner">
+    <div class="sidebar" id="sidebar">
+      <ul class="nav nav-list">
+        <li>
+          <a routerLink="/customers" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <i class="icon-dashboard"></i>
+            <span class="menu-text"> Clientes </span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/companies" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <i class="icon-dashboard"></i>
+            <span class="menu-text"> Empresas </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="page-content">
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
